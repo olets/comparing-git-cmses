@@ -19,3 +19,5 @@ fields:
   name: layout
   label: layout
   hidden: true
+pages:
+- posts/a-new-post-created-in-forestry.md
