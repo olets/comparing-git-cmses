@@ -6,7 +6,53 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
+const Image = require("@11ty/eleventy-img");
+
+async function imageShortcode(src, alt, sizes) {
+  let metadata = await Image(src, {
+    widths: [300, 600],
+    formats: ["avif", "jpeg"],
+    outputDir: "./_site/",
+    urlPath: "/img/",
+    filenameFormat: function (id, src, width, format, options) {
+      // id: hash of the original image
+      // src: original image path
+      // width: current width in px
+      // format: current file format
+      // options: set of options passed to the Image call
+
+      return `${src}-${width}-${id}.${format}`;
+    },
+    cacheOptions: {
+      // if a remote image URL, this is the amount of time before it fetches a fresh copy
+      duration: "1d",
+      // project-relative path to the cache directory
+      directory: ".cache",
+      removeUrlQueryParams: false,
+    },
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading: "lazy",
+    decoding: "async",
+  };
+  console.log( metadata );
+
+  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  return Image.generateHTML(metadata, imageAttributes, {
+    whitespaceMode: "inline"
+  });
+
+}
+
 module.exports = function(eleventyConfig) {
+  // Images
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  // eleventyConfig.addLiquidShortcode("image", imageShortcode);
+  // eleventyConfig.addJavaScriptFunction("image", imageShortcode);
+
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
