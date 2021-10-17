@@ -37,4 +37,4 @@ Hello world. This is Forestry.
 
 ![](/img/lines.png)
 
-{% image "/img/lines.png" "" %}
+{% image "/img/lines.png", "" %}
