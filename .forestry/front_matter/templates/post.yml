@@ -18,7 +18,7 @@ fields:
 - type: text
   name: layout
   label: layout
-  hidden: true
+  hidden: false
   default: layout
 pages:
 - posts/a-new-post-created-in-forestry.md
