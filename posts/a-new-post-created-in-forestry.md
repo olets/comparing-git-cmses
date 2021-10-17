@@ -4,7 +4,7 @@ description: This was made in Forestry!
 date: 2021-10-16T10:00:00.000+00:00
 tags:
 - number 2
-layout: ''
+layout: layouts/post.njk
 
 ---
 Hello world. This is Forestry.
