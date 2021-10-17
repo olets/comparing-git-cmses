@@ -1,0 +1,26 @@
+
+
+---
+label: Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: datetime
+  name: date
+  label: date
+  default: now
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: layout
+  label: layout
+  default: post
+  hidden: true
+pages:
+- posts/a-post-written-in-forestry.md
