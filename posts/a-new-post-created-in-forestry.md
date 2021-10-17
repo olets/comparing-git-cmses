@@ -1,7 +1,7 @@
 ---
 title: A new post created in Forestry
 description: This was made in Forestry!
-date: 2021-10-16T10:00:00Z
+date: 2021-10-16T10:00:00.000+00:00
 tags:
 - number 2
 layout: ''
@@ -34,3 +34,5 @@ Hello world. This is Forestry.
 
 1. an
 2. ordered list
+
+1. ![](/img/lines.png)
