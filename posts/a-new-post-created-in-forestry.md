@@ -35,4 +35,4 @@ Hello world. This is Forestry.
 1. an
 2. ordered list
 
-1. ![](/img/lines.png)
+![](/img/lines.png)
