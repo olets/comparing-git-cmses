@@ -38,3 +38,15 @@ const some = (code) => {
 2. ordered list
 
 ![](https://res.cloudinary.com/dxabuasr6/image/upload/v1643091107/comparing-git-cmses/profile_xwgkee.jpg)
+
+    codeblock added with backticks
+
+and
+
+    codeblock added with UI
+
+and
+
+```javascript
+codeblock added with backticks and language
+```
