@@ -34,7 +34,3 @@ Hello world. This is Forestry.
 
 1. an
 2. ordered list
-
-![](/img/lines.png)
-
-{% image "/img/lines.png", "" %}
