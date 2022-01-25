@@ -35,4 +35,4 @@ Hello world. This is Forestry.
 1. an
 2. ordered list
 
-![](images/v1643091107/comparing-git-cmses/profile_xwgkee.jpg)
+![](comparing-git-cmses/v1643091107/comparing-git-cmses/profile_xwgkee.jpg)
