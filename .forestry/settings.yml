@@ -13,7 +13,7 @@ sections:
   path: _data/metadata.json
   label: Site metadata
 upload_dir: comparing-git-cmses
-public_path: ''
+public_path: https://res.cloudinary.com/dxabuasr6/image/upload
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
