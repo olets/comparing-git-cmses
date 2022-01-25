@@ -25,9 +25,11 @@ Hello world. This is Forestry.
 
 > A quote
 
-    const some = (code) => {
-    	return 'goes here';
-    }
+```js
+const some = (code) => {
+  return 'goes here';
+}
+```
 
 * an
 * unordered list
