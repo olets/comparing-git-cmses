@@ -13,7 +13,7 @@ async function imageShortcode(src, alt, sizes) {
     widths: [300, 600],
     formats: ["avif", "jpeg"],
     outputDir: "./_site/",
-    urlPath: "/img/",
+    urlPath: "img/",
     filenameFormat: function (id, src, width, format, options) {
       // id: hash of the original image
       // src: original image path
