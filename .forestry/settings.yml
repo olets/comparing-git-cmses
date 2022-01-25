@@ -12,11 +12,11 @@ sections:
 - type: document
   path: _data/metadata.json
   label: Site metadata
-upload_dir: img
-public_path: "/img"
+upload_dir: comparing-git-cmses
+public_path: ''
 front_matter_path: ''
-use_front_matter_path: false
-file_template: ":filename:"
+use_front_matter_path: 
+file_template: ":filename:-:year:-:month:-:day:"
 build:
   preview_output_directory: _site
   install_dependencies_command: npm install
